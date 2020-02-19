@@ -1,3 +1,3 @@
-#add a new card
-Validation
+#Add a new card
+#Validation
  
