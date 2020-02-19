@@ -1,0 +1,193 @@
+
+
+/* Global */
+* {
+    box-sizing: border-box;
+}
+ 
+body,
+html {
+    height: 100%;
+    min-height: 100%;
+}
+ 
+body {
+    font-family: 'Roboto',
+    sans-serif;
+    margin: 0;
+}
+
+.card-container{
+    display: flex;
+    border:solid 1px gray;
+  
+    background-color: whitesmoke;
+    padding: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#add-card{
+    margin-right: 6px;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cardFormBody{
+	  width: 100%;
+    height: auto;
+    margin: 6px auto 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+    padding: 0px 10px 10px 20px;
+    display: none;
+}
+.card-section{
+    display: flex; 
+    margin-top: 20px;
+}
+
+.delete-button{
+    float: right;
+    margin-top: -16px;
+    margin-right: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#container{
+    margin: 14px;
+    border: 5px solid;
+    width: 50%;
+    padding: 0px 10px;
+}
+
+.button-section{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.button-section button:nth-child(1){
+   background-color: gray;
+   color:white;
+   height: 30px;;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} 
+
+.button-section button:nth-child(2){
+cursor: pointer;
+    color:black;
+    height: 30px;;
+     padding: 4px;
+     border: none;
+     border-radius: 4px;
+     margin-left: 20px;
+     margin-bottom: 10px;
+ } 
+
+input[type="text"]{
+    width: 100%;
+    max-width: 200px;
+    margin-left: 10px;
+    margin-right: 30px;
+    border-radius: 2px;
+    height: 20px;
+    padding: 2px;
+    height: 28px;
+}
+
+.card-expiry{
+    margin-top: 8px;
+}
+
+.inputType{
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.error{
+    display: none;
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 8px;
+    padding-left: 6px;
+}
+
+#savedCard{
+    margin: 6px auto 6px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+    padding: 0px 10px 10px 20px;
+}
+
+.card-list{
+   height: 80px;
+   margin-top: 4px;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   background-color: #fff;
+   box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+   padding: 0px 10px 10px 20px;
+}
+
+.card-list span{
+    padding: 4px;
+    font-weight: bold;
+}
+
+.card-type{
+    display: inline-block;
+    border:solid 1px grey;
+    padding: 2px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-number{
+    margin-left: 10px;
+    display:inline-block;
+  
+    padding: 2px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-expiry-error{
+    border:solid 1px red;
+}
+p.notetext {
+    font-size: 12px;
+    color: #887f7f;
+}
+/* Buttons Section */
+.paypal-btn,
+.proceed-btn {
+    cursor: pointer;
+    font-size: 16px;
+    width: 28%;
+    border-color: transparent;
+    border-radius: 6px;
+    height: 40px;
+    /* margin-left: 30px; */
+}
+ 
+.proceed-btn {
+    /* margin-bottom: 10px; */
+    background: #8b9288;
+}

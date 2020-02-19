@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Credit Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h4><u>Manage Credit Card</u></h4>
+        <div class="card-container" id="addCard" name="addCard">
+            <div id="add-card"> + </div>
+            <div>Add New Card</div>
+        </div>
+
+        <div class="cardFormBody" id="cardFormBody">
+            <h5>Add New Card</h5>
+            <div class="card-details card-section">
+                <div>
+                    <input type="text" name="cardNumber" id="cardNumber" placeholder="Enter Card Number" />
+                    <br />
+                    <div id="card-error" class="error">Not a valid Card Number</div>
+                </div>
+                <div class="card-expiry inputType">
+                    Expiry <select id="month">
+                        <option value="0">MM</option>
+                    </select>
+                    <select id="year">
+                        <option value="0">YY</option>
+                    </select>
+                    <div id="date-error" class="error">Required</div>
+                </div>
+            </div>
+            <div class="card-details card-section">
+                <div>
+                    <input type="text" class="inputType" name="cvvNumber" id="cvvNumber" placeholder="Enter CVV" />
+                    <br/>
+                        <div id="cvv-error" class="error">CVV number should be 3 digit</div>
+                </div>
+                <div>
+                    <input type="text" class="inputType" name="cardName" id="cardName"
+                        placeholder="Name This Card for future use" />
+                </div>
+            </div>
+		
+
+            <div class="button-section">
+                <button  class="proceed-btn"  id="saveCard">Save This CARD</button>
+                <button   class="paypal-btn" id="cancel">Cancel</button>
+            </div>
+			<p class='notetext'>your card details would be securely saved for faster payment, Your CVV will not be stored</p>
+
+        </div>
+
+        <div id="savedCard">
+
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
